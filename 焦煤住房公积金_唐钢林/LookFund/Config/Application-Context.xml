@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database"
+         xmlns:aop="http://www.springframework.net/aop"
+         xmlns:tx="http://www.springframework.net/tx">
+
+
+  <object id="MySessionFactory" parent="abstrctSessionFactory">
+    <property name="MappingAssemblies">
+      <list>
+        <value>LookFund</value>
+        <value>TglFirst.Core</value>
+      </list>
+    </property>
+  </object>
+  <import resource="assembly://LookFund/LookFund.Config/Dao-Context.xml"/>
+</objects>

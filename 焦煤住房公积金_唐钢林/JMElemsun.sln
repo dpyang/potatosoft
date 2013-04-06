@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookFund", "LookFund\LookFund.csproj", "{C20A0EB1-A194-4776-B79C-EF88D67AA414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TglFirst.Core", "TglFirst.Core\TglFirst.Core.csproj", "{DA44C91C-2EF6-4693-91A1-6CECF80AE7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookFund.Test", "LookFund.Test\LookFund.Test.csproj", "{AD92EC5A-1D26-4DF2-BE3A-BF3D0F46CCA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C20A0EB1-A194-4776-B79C-EF88D67AA414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20A0EB1-A194-4776-B79C-EF88D67AA414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20A0EB1-A194-4776-B79C-EF88D67AA414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20A0EB1-A194-4776-B79C-EF88D67AA414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA44C91C-2EF6-4693-91A1-6CECF80AE7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA44C91C-2EF6-4693-91A1-6CECF80AE7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA44C91C-2EF6-4693-91A1-6CECF80AE7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA44C91C-2EF6-4693-91A1-6CECF80AE7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD92EC5A-1D26-4DF2-BE3A-BF3D0F46CCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD92EC5A-1D26-4DF2-BE3A-BF3D0F46CCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD92EC5A-1D26-4DF2-BE3A-BF3D0F46CCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD92EC5A-1D26-4DF2-BE3A-BF3D0F46CCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

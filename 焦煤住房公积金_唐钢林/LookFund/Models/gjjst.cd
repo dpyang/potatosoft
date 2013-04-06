@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LookFund.Models.FundInfo.BasicInfo">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAIAQAEAAAAAICAEAAAAMAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FundInfo\BasicInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="EmpTakeInfo" />
+      <Property Name="TransferInfo" />
+      <Property Name="ReserveInfo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.CurrentMonth">
+    <Position X="12.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FundInfo\CurrentMonth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.HistoryMonth">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FundInfo\HistoryMonth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.TakeInfo">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgQAAAAAAACAIAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Models\FundInfo\TakeInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BelongBasicInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.TransferOut">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\FundInfo\TransferOut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.TransferJoin">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FundInfo\TransferJoin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.Transfer">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAAAAAAAAAAAAAAAAAAAAAgAIAAAAAAA=</HashCode>
+      <FileName>Models\FundInfo\Transfer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookFund.Models.FundInfo.Reserve">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABIAAAAAAAAACARIAAAAAgAAAAACgAAAA=</HashCode>
+      <FileName>Models\FundInfo\Reserve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TglFirst.Core.Model.Example.User">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="LookFund.Models.Membership.MEmploye">
+    <Position X="5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQAAAAAAAAACAAIAIAAAAABAAAAAAAAAAAAAEIA=</HashCode>
+      <FileName>Models\Membership\MEmploye.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="FunctionList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LookFund.Models.Membership.FunctionMenu">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAgAAAAAAEAAAIAAA=</HashCode>
+      <FileName>Models\Membership\FunctionMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookFund.Models.Membership.MComments">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAQAAAAQAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Membership\MComments.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComPerson" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TglFirst.Core.Model.AbstractModel">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="SimSun" Size="9" />
+</ClassDiagram>

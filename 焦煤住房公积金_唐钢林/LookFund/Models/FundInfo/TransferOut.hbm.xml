@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true" 
+                   namespace="LookFund.Models.FundInfo" 
+                   assembly="LookFund">
+
+  <union-subclass name="TransferOut" extends="Transfer"  table="R_2001_10_2006">
+    <property name="OutDate" column="A15"/>
+    <property name="OutType" column="A16"/>
+  </union-subclass>
+  
+</hibernate-mapping>

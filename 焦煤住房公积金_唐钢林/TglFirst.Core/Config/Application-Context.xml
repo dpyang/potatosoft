@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database"
+         xmlns:aop="http://www.springframework.net/aop"
+         xmlns:tx="http://www.springframework.net/tx">
+         
+  <!-- 用以我们在其它的应用程序中，配置数据访问 -->
+  <object name="appConfigPropertyHolder" type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+    <property name="configSections" value="databaseSettings"/>
+  </object>
+  
+  <!-- 数据库和Nhibernate的相关配置 -->
+  <db:provider id="DbProvider" provider="${db.provider}"
+               connectionString="Server=${db.datasource};database=${db.database};uid=${db.user};pwd=${db.password};"/>
+
+  <!--SessionFactory对象，其中包括一些比较重要的属性 -->
+  <object id="abstrctSessionFactory" abstract="true" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate21">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="MappingAssemblies">
+      <list>
+        <value>TglFirst.Core</value>
+      </list>
+    </property>
+    <property name="HibernateProperties">
+      <dictionary>
+        <entry key="proxyfactory.factory_class" value="NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle"/>
+        <entry key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider" />
+        <entry key="dialect" value="${db.dialect}"/>
+        <entry key="hibernate.connection.driver_class" value="NHibernate.Driver.SqlClientDriver"/>     
+        <entry key="show_sql" value="true"/>        
+
+        <entry key="hbm2ddl.auto" value="none"/>
+        <entry key="command_timeout" value="60"/> 
+        
+        <entry key="cache.use_second_level_cache" value="true"/>
+        <entry key="cache.use_query_cache" value="true"/>
+        <entry key="query.substitutions" value="true 1, false 0, yes 'Y', no 'N"/>        
+        <entry key="hibernate.current_session_context_class" value="Spring.Data.NHibernate.SpringSessionContext, Spring.Data.NHibernate21"/>        
+      </dictionary> 
+    </property>
+    <property name="ExposeTransactionAwareSessionFactory" value="true" />
+  </object>
+
+  <object id="HibernateTemplate" type="Spring.Data.NHibernate.Generic.HibernateTemplate,Spring.Data.NHibernate21">
+    <property name="SessionFactory" ref="MySessionFactory" />
+  </object>
+  
+  <object id="transactionManager" type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate21">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="SessionFactory" ref="MySessionFactory"/>
+  </object>
+
+  <object id="TransactionInterceptor" type="Spring.Transaction.Interceptor.TransactionInterceptor, Spring.Data">
+    <property name="TransactionManager" ref="transactionManager"/>
+    <property name="TransactionAttributeSource">
+      <object type="Spring.Transaction.Interceptor.AttributesTransactionAttributeSource, Spring.Data"/>
+    </property>
+  </object>  
+  
+  <tx:attribute-driven />
+
+  <!--数据库访问基类 -->
+  <object id="dao.Repository" type="TglFirst.Core.Repository.RepositoryBase,TglFirst.Core"  abstract="true">
+    <property name="SessionFactory" ref="MySessionFactory"/>
+  </object>
+
+</objects>

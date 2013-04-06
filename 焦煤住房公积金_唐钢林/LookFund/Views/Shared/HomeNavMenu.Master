@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/NavSite.Master" Inherits="System.Web.Mvc.ViewMasterPage"  %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<div id="nav">
+    <ul>
+        <li><a href="<%:Url.Action("Index","Home") %>">网站首页</a></li>
+        <li><a href="#">机构简介</a></li>
+        <li><a href="#">政策法规</a></li>
+        <li><a href="#">新闻动态</a></li>
+        <li><a href="#">通知公告</a></li>
+        <li><a href="#">留言板</a></li>
+        <li><a href="<%:Url.Action("Login","Home") %>">公积金查询</a></li>
+    </ul>
+</div>
+<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+<div id="foot">
+    <ul>
+        <li>Copyright © 2000 - 2009 www.www.kjzx.cn All Rights Reserved. 咨询时间：全天24小时服务（节假日不休息）
+            邮箱：webmaster@kjzx.cn</li>
+        <li>投诉电话:0351-023452671 报名咨询电话:0351-82318888 / 4008104588 / 8008104588 传真:0351-82330109
+            / 82318888人工转传真</li>
+    </ul>
+</div>
+</asp:Content>

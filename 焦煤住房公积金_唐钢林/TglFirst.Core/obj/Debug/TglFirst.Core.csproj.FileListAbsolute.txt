@@ -1,0 +1,154 @@
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+E:\Work\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+E:\Work\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+E:\Work\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+D:\sxcc\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+D:\sxcc\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\sxcc\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+D:\sxcc\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+E:\Work\jmgjj\Ben\JMElemsun0709\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+D:\sxcc\gjj\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\gjj\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+E:\Work\gjj\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\sxgjj\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+D:\sxgjj\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+E:\MyWork\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+E:\MyWork\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+E:\MyWork\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+E:\MyWork\JMElemsun_\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\NHibernate.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Aop.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Core.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\log4net.dll
+F:\work\JMElemsun\TglFirst.Core\bin\Debug\Common.Logging.dll
+F:\work\JMElemsun\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+F:\work\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+F:\work\JMElemsun\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\NHibernate.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Aop.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Core.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Data.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\log4net.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\bin\Debug\Common.Logging.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+D:\My Documents\Tencent Files\283713763\FileRecv\jmelemsungjj\TglFirst.Core\obj\Debug\TglFirst.Core.pdb
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\TglFirst.Core.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\TglFirst.Core.pdb
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\NHibernate.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Aop.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Core.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Data.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Spring.Data.NHibernate21.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Iesi.Collections.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Antlr3.Runtime.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\log4net.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\bin\Debug\Common.Logging.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\obj\Debug\TglFirst.Core.dll
+D:\My Documents\Visual Studio 2010\Projects\jmelemsungjj\TglFirst.Core\obj\Debug\TglFirst.Core.pdb

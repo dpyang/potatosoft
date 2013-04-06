@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true"
+                   namespace="LookFund.Models.Membership"
+                   assembly="LookFund">
+
+  <union-subclass name="FunctionMenu" extends="TglFirst.Core.Model.AbstractModel,TglFirst.Core" table="R_2001_10_1002">
+    <property name="LevelCode" column="A11"/>
+    <property name="FunctionName" column="A12" />
+    <property name="NextNodeNumber" column="A13"/>
+    <property name="ActionName" column="A14"/>
+  </union-subclass>
+
+</hibernate-mapping>

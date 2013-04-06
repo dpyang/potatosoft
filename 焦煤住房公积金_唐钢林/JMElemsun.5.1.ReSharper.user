@@ -1,0 +1,184 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:Membership/f:MEmploye.cs" caret="3465" fromTop="14" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Home/f:Login.aspx" caret="731" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:AdminMain.aspx" caret="1610" fromTop="20" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Controllers/d:Filter/f:AuthorizationAttribute.cs" caret="147" fromTop="6" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/d:ExtSystem/f:ext-all.js" caret="477061" fromTop="10" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Controllers/f:AbstractPageController.cs" caret="312" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:LeftMenu.ascx" caret="0" fromTop="0" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:HistoryData.ascx" caret="0" fromTop="0" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/f:jquery.form.js" caret="0" fromTop="0" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/d:Account/f:CenterImport.js" caret="412" fromTop="14" />
+      <File id="DA44C91C-2EF6-4693-91A1-6CECF80AE7AA/f:SpringContext.cs" caret="962" fromTop="25" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Util/f:CsvStreamWriter.cs" caret="363" fromTop="15" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/f:ExeclHelper.cs" caret="9914" fromTop="14" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:EmpFundLook.ascx" caret="1731" fromTop="16" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Shared/f:Main.Master" caret="0" fromTop="0" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/d:Home/f:Login.js" caret="441" fromTop="14" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Controllers/f:HomeController.cs" caret="605" fromTop="17" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/d:Account/f:PwdEdit.js" caret="961" fromTop="32" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:BaseImport.ascx" caret="201" fromTop="5" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/d:Account/f:EmpFundLook.js" caret="719" fromTop="26" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="755" fromTop="13" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/f:Web.config" caret="0" fromTop="0" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/f:Web.config" caret="1166" fromTop="20" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="9223" fromTop="52" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/f:sql.hbm.xml" caret="920" fromTop="15" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:ViewModel/f:ErrorViewModel.cs" caret="325" fromTop="17" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:HistoryDateImport.ascx" caret="922" fromTop="2" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Scripts/d:Account/f:ReportImport.js" caret="1029" fromTop="18" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DBasicInfo.cs" caret="8636" fromTop="26" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Controllers/f:AccountController.cs" caret="5560" fromTop="44" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/f:ExeclHelper.cs" caret="9583" fromTop="5" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/f:ExeclHelper.cs" caret="10225" fromTop="18" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/f:ExeclHelper.cs" caret="9963" fromTop="18" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DBasicInfo.cs" caret="18736" fromTop="29" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DBasicInfo.cs" caret="18764" fromTop="26" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Controllers/f:AccountController.cs" caret="26373" fromTop="30" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="3125" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="1057" fromTop="9" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="1057" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="980" fromTop="9" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="1040" fromTop="14" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="1021" fromTop="10" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="764" fromTop="17" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Views/d:Account/f:ExportError.ascx" caret="486" fromTop="13" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="1052" fromTop="23" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="1196" fromTop="29" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Controllers/f:AccountController.cs" caret="26688" fromTop="27" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="3683" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="8570" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="8742" fromTop="45" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:ViewModel/f:ErrorViewModel.cs" caret="1031" fromTop="8" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:ViewModel/f:ErrorViewModel.cs" caret="1175" fromTop="15" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:ViewModel/f:ErrorViewModel.cs" caret="1612" fromTop="22" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="9114" fromTop="22" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Dao/d:FundInfo/f:DHistoryMonth.cs" caret="9388" fromTop="25" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/f:Web.config" caret="1839" fromTop="11" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/f:Web.config" caret="3334" fromTop="18" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/f:Web.config" caret="1166" fromTop="20" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:ViewModel/f:ErrorViewModel.cs" caret="2247" fromTop="12" />
+      <File id="C20A0EB1-A194-4776-B79C-EF88D67AA414/d:Models/d:ViewModel/f:ErrorViewModel.cs" caret="2615" fromTop="17" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.HttpVerbs">
+      <Item value="Get" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LookFund.Models.Membership.MEmploye">
+      <Item value="LoginName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="workbook" priority="1" />
+      <Item value="ms" priority="0" />
+      <Item value="curContext" priority="0" />
+      <Item value="csw" priority="1" />
+      <Item value="if" priority="2" />
+      <Item value="dtSource" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="void" priority="1" />
+      <Item value="static" priority="0" />
+      <Item value="dic" priority="2" />
+      <Item value="try" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="item" priority="0" />
+      <Item value="public" priority="1" />
+      <Item value="JsonResult`0" priority="0" />
+      <Item value="ActionResult`0" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="Content`0" priority="0" />
+      <Item value="string" priority="8" />
+      <Item value="GetStrSql`0" priority="0" />
+      <Item value="strSql" priority="1" />
+      <Item value="da" priority="3" />
+      <Item value="ErrorViewModel`0" priority="0" />
+      <Item value="cmd" priority="4" />
+      <Item value="model" priority="0" />
+      <Item value="ExcelHelper`0" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="hist" priority="0" />
+      <Item value="new" priority="0" />
+      <Item value="ErrorViewModel" priority="0" />
+      <Item value="errorType" priority="0" />
+      <Item value="erroritem" priority="0" />
+      <Item value="strDate" priority="0" />
+      <Item value="errortime" priority="0" />
+      <Item value="strUnit" priority="1" />
+      <Item value="teamname" priority="0" />
+      <Item value="unitName" priority="1" />
+      <Item value="errorteam" priority="0" />
+      <Item value="Session" priority="0" />
+      <Item value="SqlCommand`0" priority="1" />
+      <Item value="sqlCommand" priority="1" />
+      <Item value="as" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Server" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LookFund.Util.CsvStreamWriter">
+      <Item value="AddData`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRowCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToLower`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Select`2" priority="0" />
+      <Item value="Keys" priority="2" />
+      <Item value="Values" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2+KeyCollection">
+      <Item value="Equals`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlDataAdapter">
+      <Item value="DeleteCommand" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LookFund.Models.ViewModel.ErrorViewModel">
+      <Item value="DeleteSql`0" priority="1" />
+      <Item value="ModelSql`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LookFund.Dao.FundInfo.IHistoryMonth">
+      <Item value="DeleteError`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlCommand">
+      <Item value="ExecuteNonQuery`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

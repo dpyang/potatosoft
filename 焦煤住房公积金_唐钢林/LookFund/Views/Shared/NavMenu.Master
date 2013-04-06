@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/NavSite.Master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="LookFund.Models.Membership" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<div id="nav">
+    <ul>
+       <%-- <li><a href="<%:Url.Action("Index","Home") %>">网站首页</a></li>
+        <li><a href="#">机构简介</a></li>
+        <li><a href="#">政策法规</a></li>
+        <li><a href="#">新闻动态</a></li>
+        <li><a href="#">通知公告</a></li>
+        <li><a href="#">留言板</a></li>
+        <li><a href="<%:Url.Action("Login","Home") %>">公积金查询</a></li>--%>
+    </ul>
+</div>
+<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+<div id="foot">
+    <ul>
+        <%
+        if (ViewData["manageinfo"] != null)
+        {
+            var list = ViewData["manageinfo"] as IList<MEmploye>;
+            foreach (var item in list)
+            {
+                %>
+                <li style="color:Blue;">
+                    <%: Enum.GetName(typeof(Company), Convert.ToInt32(item.EmpKind + "01")) %>：
+                    <%:item.ShowName %> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <%:item.EmpPhone %> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <%:item.EmpEmail %>
+                </li>
+                <%
+            }
+        }
+        else
+        {
+            %>
+                <li style="height:65px;">&nbsp;</li>
+            <%
+        }
+       %>
+    </ul>
+</div>
+</asp:Content>

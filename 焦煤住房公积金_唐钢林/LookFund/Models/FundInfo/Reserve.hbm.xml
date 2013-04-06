@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true" 
+                   namespace="LookFund.Models.FundInfo" 
+                   assembly="LookFund">
+
+  <union-subclass name="Reserve" extends="TglFirst.Core.Model.AbstractModel, TglFirst.Core" abstract="true">
+    <property name="YearMonth" column="A11"/>
+    <property name="BaseNumber" column="A12" />
+    <property name="EmpUnit" column="A13"/>
+    <property name="ExternalJoin" column="A14"/>
+    <property name="SelfCross" column="A15"/>
+    <property name="UnitCorss" column="A16"/>
+    <property name="SelfPlusCross" column="A17"/>
+    <property name="UnitPlusCross" column="A18"/>
+    <property name="MoveJoin" column="A19"/>
+    <property name="MoveOut" column="A20"/>    
+    
+  </union-subclass>
+  
+</hibernate-mapping>

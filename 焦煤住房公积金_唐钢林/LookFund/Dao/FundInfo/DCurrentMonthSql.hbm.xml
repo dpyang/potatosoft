@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <sql-query name="fundExits">
+    select count(*) from R_2001_10_2001 a inner join R_2001_10_2003 b on a.C1=b.C6
+    where a.C8=:empcid and b.C7=:time
+  </sql-query>
+  <sql-query name="DateMonth">
+    select #ColName,b.C1 from R_2001_10_2001 a inner join R_2001_10_2003 b on a.C1=b.C6
+    where b.C8='0' and a.C6 like '#empKind%'
+  </sql-query>
+  <sql-query name="MonthCount">
+    select Count(*) from R_2001_10_2001 a inner join R_2001_10_2003 b on a.C1=b.C6
+    where b.C8='0'and a.C6 like '#empKind%'
+  </sql-query>
+  <sql-query name="VerifySucced">
+    update R_2001_10_2003 set C8='1' where C1=:guid
+  </sql-query>
+  <sql-query name="SuccedAll">
+    update  R_2001_10_2003 set C8='1' from R_2001_10_2001 b
+    where R_2001_10_2003.C6=b.C1 and b.c6 like '#empKind%'
+  </sql-query>
+  <sql-query name="VerifyStat">
+    select C7,#StatColumn from R_2001_10_2003 where c8=0 group by c7
+  </sql-query>
+
+  <sql-query name="CidDateMonth">
+    select top 1 #ColName from #tableName where C6='#guid' order by c7 desc
+  </sql-query>
+  <sql-query name="CidHistoryDate">
+    select #ColName from #tableName where c6='#guid' order by c7 desc
+  </sql-query>
+  <sql-query name="NotCurrHistory">
+    select * from (
+    select #ColName from R_2001_10_2003 where C6='#guid' and C8='1' union all
+    select #ColName from R_2001_10_2004 where C6='#guid') as T where c7 !='#currYear' order by T.c7 desc
+  </sql-query>
+  <sql-query name="NotCurrHistoryTime">
+    select #ColName from #tableName where C6='#guid' #TimeWhere order by c7 desc
+  </sql-query>
+</hibernate-mapping>

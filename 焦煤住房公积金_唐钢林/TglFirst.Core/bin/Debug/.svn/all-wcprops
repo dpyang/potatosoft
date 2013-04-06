@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug
+END
+Antlr3.Runtime.dll
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Antlr3.Runtime.dll
+END
+TglFirst.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/TglFirst.Core.dll
+END
+Iesi.Collections.dll
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Iesi.Collections.dll
+END
+Spring.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Spring.Core.dll
+END
+Spring.Data.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Spring.Data.dll
+END
+Spring.Data.NHibernate21.dll
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Spring.Data.NHibernate21.dll
+END
+log4net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/log4net.dll
+END
+Common.Logging.dll
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Common.Logging.dll
+END
+NHibernate.dll
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/NHibernate.dll
+END
+TglFirst.Core.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/TglFirst.Core.pdb
+END
+Spring.Aop.dll
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/bin/Debug/Spring.Aop.dll
+END

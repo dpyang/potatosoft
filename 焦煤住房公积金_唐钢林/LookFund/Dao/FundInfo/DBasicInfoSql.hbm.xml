@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <sql-query name="ImportBase">
+    insert into R_2001_10_2001 (#strName,C6,C7,C1) values(#strValue)
+  </sql-query>
+  
+  <sql-query name="ImprotProc">
+    DECLARE	@return_value int
+    EXEC @return_value =#procName @importtime = '#procdate',	@userName = '#procuser',@AreaPeople='#proArea'
+    SELECT	'Return Value' = @return_value
+  </sql-query>
+
+  <sql-query name="ImproGetMonth">
+    select a0 from R_2001_10_2001Temp where c7=:userName group by A0
+  </sql-query>
+  
+  <sql-query name="BaseGuid">
+    select C1 from R_2001_10_2001 where C8=:Cid
+  </sql-query>
+  <sql-query name="CidBaseInfo">
+    select #ColName,C1 from R_2001_10_2001 where C8='#cid'
+  </sql-query>
+  <sql-query name="guidBaseInfo">
+    select #ColName,C1 from R_2001_10_2001 where C1='#strguid'
+  </sql-query>  
+  <sql-query name="BaseLoginUid">
+    select count(*) from R_2001_10_2001 where C7='#loginUid'
+  </sql-query>
+  <sql-query name="GetChildrenNode">
+    select C1 as [Uid],A11 as LevelCode, A12 as FunctionName,A13 as NextNodeNumber,A14 as ActionName  from R_2001_10_1002 where A11 like '#code%' and len(A11)=#lencode
+  </sql-query>
+  <sql-query name="whereBaseInfo">
+    select top #size * from (
+    select *,ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as rowsnumber from ( select distinct #ColName,a.C6 as 所属单位,a.C1
+    from R_2001_10_2001 a inner join #tableName b on a.c1=b.c6 #strWhere) as Tquery) as T where T.rowsnumber>#rowsNuber
+  </sql-query>
+  <sql-query name="whereBaseInfoCount">
+    select  count( distinct a.c1) from R_2001_10_2001 a inner join #tableName b on a.c1=b.c6 #strWhere
+  </sql-query>
+  <sql-query name="GetEmpKind">
+    select c6 from dbo.R_2001_10_2001 where c7=:strGuid
+  </sql-query>
+  <sql-query name="selectListUnit">
+    select A17 as sText,A17 as sValue from R_2001_10_2001 where c6 like '#company%' group by A17
+  </sql-query>
+  <sql-query name="selectEorrListUnit">
+    select A50 as sText,A50 as sValue from R_2001_10_2001_{0}Error   group by A50
+  </sql-query>
+</hibernate-mapping>

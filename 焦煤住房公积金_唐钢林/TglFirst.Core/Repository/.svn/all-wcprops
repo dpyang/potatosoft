@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/Repository
+END
+IRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/Repository/IRepository.cs
+END
+RepositoryBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jmelemsun/!svn/ver/1/TglFirst.Core/Repository/RepositoryBase.cs
+END

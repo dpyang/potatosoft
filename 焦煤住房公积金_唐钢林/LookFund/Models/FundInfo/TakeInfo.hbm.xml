@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true" 
+                   namespace="LookFund.Models.FundInfo" 
+                   assembly="LookFund">
+
+  <union-subclass name="TakeInfo" extends="TglFirst.Core.Model.AbstractModel, TglFirst.Core" table="R_2001_10_2002">
+    <property name="TakeType" column="A11"/>
+    <property name="TakeDate" column="A12" />
+    <property name="TakeMoney" column="A13"/>
+    <property name="AuditPerson" column="A14"/>
+    <many-to-one name="BelongBasicInfo" column="C6" class="BasicInfo"/>
+  </union-subclass>
+  
+</hibernate-mapping>

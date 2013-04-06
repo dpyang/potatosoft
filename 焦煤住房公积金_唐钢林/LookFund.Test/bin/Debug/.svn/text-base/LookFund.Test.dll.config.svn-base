@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+   
+    <sectionGroup name="spring">
+      <section name="context" type="Spring.Context.Support.WebContextHandler, Spring.Web"/>
+      <section name="parsers" type="Spring.Context.Support.NamespaceParsersSectionHandler, Spring.Core"/>
+    </sectionGroup>
+    <section name="databaseSettings" type="System.Configuration.NameValueSectionHandler"/>
+  </configSections>
+  <spring>
+    <parsers>
+      <parser type="Spring.Aop.Config.AopNamespaceParser, Spring.Aop"/>
+      <parser type="Spring.Data.Config.DatabaseNamespaceParser, Spring.Data"/>
+      <parser type="Spring.Transaction.Config.TxNamespaceParser, Spring.Data"/>
+    </parsers>
+  </spring>
+
+  <databaseSettings>
+    <add key="db.provider" value="SqlServer-2.0"/>
+    <add key="db.dialect" value="NHibernate.Dialect.MsSql2005Dialect"/>
+    <add key="db.datasource" value="192.168.2.88" />
+    <add key="db.user" value="lmskfb" />
+    <add key="db.password" value="lmskfb@)!!" />
+    <add key="db.database" value="zfgjjxtbs0801" />
+  </databaseSettings>
+</configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"> 
+  
+  <sql-query name="CommentBranch">
+    select b.C1 as [Uid],b.A11 as [Conent],b.A12 as [Reply],b.A13 as [CommDate],a.A13 as [EmpName],a.C1 as [EmpUid] from R_2001_10_1001 a
+    inner join dbo.R_2001_10_1004 b on a.C1=b.c6 inner join R_2001_10_2001 c on a.C1=c.C7 where c.c6 like '#BranchValue%'
+  </sql-query>
+
+  <sql-query name="CommentBranchCount">
+    select count(*) from R_2001_10_1001 a inner join dbo.R_2001_10_1004 b on a.C1=b.c6 inner join R_2001_10_2001 c on a.C1=c.C7 where c.c6 like '#BranchValue%'
+  </sql-query>
+  
+  <sql-query name="ReportState">
+    select b.c7,a.c6,a.A17, count(*) as number from R_2001_10_2001 a inner join R_2001_10_2003 b
+    on a.c1=b.c6 where a.c6 like '#empkind%' and b.c7 BETWEEN '#sDate' and '#eDate' group by b.c7,a.c6,a.A17 order by b.c7 desc,a.c6
+  </sql-query>
+  <sql-query name="commentsStat">
+    select c.c6 as empUnit, count(*) as CommentCount ,sum(CASE WHEN b.A12 is null or b.A12='' THEN 0 ELSE 1 END) as ProcessOk ,
+    sum(CASE WHEN b.A12 is null or b.A12='' THEN 1 ELSE 0 END) as ProcessNo from R_2001_10_1001 a
+    inner join R_2001_10_1004 b on a.c1=b.c6 inner join R_2001_10_2001 c on a.c1=c.c7 where c.c6 like '#empKInd%' group by c.c6
+  </sql-query>
+  
+</hibernate-mapping>

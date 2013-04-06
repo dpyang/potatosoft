@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Main.Master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="container">        
+        <div id="top">
+            <div id="logo">
+                <img src="../../Content/UiStyle/images/logo.gif" width="397" height="84" alt="" /></div>
+            <div id="logoright" style="text-align:right; color:Black;">
+                <% Html.RenderAction("CheckLoginHead", "Account"); %>
+             </div>   
+        </div>
+        <div id="mian">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </div>
+</asp:Content>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true" 
+                   namespace="LookFund.Models.FundInfo" 
+                   assembly="LookFund">
+
+  <union-subclass name="BasicInfo" extends="TglFirst.Core.Model.AbstractModel, TglFirst.Core" table="R_2001_10_2001">
+    <property name="EmpName" column="A11"/>
+    <property name="EmpIdCard" column="A12" />
+    <property name="EmpSex" column="A13"/>
+    <property name="EmpState" column="A14"/>
+    <property name="EmpAccount" column="A15"/>
+    <property name="EmpUnit" column="A16"/>
+    <property name="EmpDept" column="A17"/>
+    <property name="StartMoney" column="A18"/>
+    <set name="ReserveInfo">
+      <key column="C6"/>
+      <one-to-many class="Reserve"/>
+    </set>
+    <set name="EmpTakeInfo">
+      <key column="C6"/>
+      <one-to-many class="TakeInfo"/>
+    </set>
+    <set name="TransferInfo">
+      <key column="C6"/>
+      <one-to-many class="Transfer"/>
+    </set>    
+  </union-subclass>
+  
+</hibernate-mapping>

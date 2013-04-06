@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="false" 
+                   namespace="LookFund.Models.Membership" 
+                   assembly="LookFund">
+
+  <union-subclass name="MEmploye" extends="TglFirst.Core.Model.Example.User, TglFirst.Core" table="R_2001_10_1001">
+    <property name="EmpKind" column="A15"/>
+    <property name="EmpPhone" column="A16"/>
+    <property name="EmpEmail" column="A17"/>
+
+    <set name="FunctionList" table="R_2001_10_1001002">
+      <key column="C6"/>
+      <many-to-many column="C7" class="FunctionMenu" order-by="A11"/>
+    </set> 
+    <set name="CommentsList">
+      <key column="C6"/>
+      <one-to-many class="MComments"/>
+    </set>
+  </union-subclass>
+  
+</hibernate-mapping>

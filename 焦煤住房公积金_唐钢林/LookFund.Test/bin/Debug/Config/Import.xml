@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <dataBase UserIdCard="A15" UserName="A11">
+    <Property column="A11" showName="姓名" ImportName="A11" VerifyShow="Yes"/>
+    <Property column="C8" showName="身份证号" ImportName="A15" VerifyShow="Yes"/>
+    <Property column="A12" showName="性别" ImportName="A14"/>
+    <Property column="A17" showName="单位名称" ImportName="A18"/>
+    <Property column="A14" showName="职工帐号" ImportName="A16"/>
+    <Property column="A13" showName="状态" ImportName="A13"/>
+    <Property column="A18" showName="所属部门" ImportName="A20"/>
+    <Property column="A16" showName="开户日期" ImportName="A73"/>
+    <Property column="A19" showName="贷款状态" ImportName="A79"/>
+  </dataBase>
+  <FundInfo FundTimeCol="A0">
+    <Property column="C7" showName="年月" ImportName="A0" VerifyShow="Yes"/>
+    <Property column="A27" showName="期初缴存余额" ImportName="A24" VerifyShow="Yes"/>
+    <Property column="A11" showName="当月汇缴#个人" ImportName="A25" VerifyShow="Yes"/>
+    <Property column="A12" showName="当月汇缴#企业" ImportName="A26" VerifyShow="Yes"/>
+    <Property column="A13" showName="当月汇缴#补缴#个人" ImportName="A27" VerifyShow="Yes"/>
+    <Property column="A14" showName="当月汇缴#补缴#企业" ImportName="A28" VerifyShow="Yes"/>
+    <Property column="A15" showName="当月汇缴#外部转入" ImportName="A84" VerifyShow="Yes"/>
+    <Property column="A19" showName="期末缴存余额" ImportName="A44" VerifyShow="Yes"/>
+    <Property column="A16" showName="调入金额" ImportName="A30" VerifyShow="Yes"/>
+    <Property column="A17" showName="调出金额" ImportName="A32" VerifyShow="Yes"/>
+    <Property column="A18" showName="当年结息" ImportName="A41"/>
+    <Property column="A20" showName="购房" ImportName="A34" type="take"/>
+    <Property column="A21" showName="退休" ImportName="A35" type="take" />
+    <Property column="A22" showName="调出集团" ImportName="A36" type="take"/>
+    <Property column="A23" showName="解聘" ImportName="A37" type="take"/>
+    <Property column="A24" showName="死亡" ImportName="A38" type="take"/>
+    <Property column="A25" showName="其它" ImportName="A39" type="take"/>
+    <Property column="A26" showName="合计" ImportName="A40" type="take"/>
+  </FundInfo>
+  <VerifyShowHead>
+    <head>
+      <![CDATA[
+       <tr>
+        <td rowspan="3" bgcolor="#CEE7FF">姓名</td>
+        <td rowspan="3" bgcolor="#CEE7FF">身份证号</td>
+        <td rowspan="3" bgcolor="#CEE7FF">年月</td>
+        <td rowspan="3" bgcolor="#CEE7FF">期<br/>初<br/>缴<br/>存<br/>余<br/>额</td>        
+        <td colspan="5" bgcolor="#CEE7FF">当月汇缴</td>
+        <td rowspan="3" bgcolor="#CEE7FF">期<br/>末<br/>缴<br/>存<br/>余<br/>额</td>
+        <td rowspan="3" bgcolor="#CEE7FF">调<br/>入<br/>金<br/>额</td>
+        <td rowspan="3" bgcolor="#CEE7FF">调<br/>出<br/>金<br/>额</td>        
+        <td rowspan="3" bgcolor="#CEE7FF">通过</td>
+      </tr>
+      <tr>
+        <td rowspan="2" bgcolor="#CEE7FF">个人</td>
+        <td rowspan="2" bgcolor="#CEE7FF">企业</td>
+        <td colspan="2" bgcolor="#CEE7FF">补缴</td>
+        <td rowspan="2" bgcolor="#CEE7FF">外<br/>部<br/>转<br/>入</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CEE7FF">个人</td>
+        <td bgcolor="#CEE7FF">企业</td>
+      </tr>
+    ]]>
+    </head>
+    <statColumn>
+      <![CDATA[A27,A11,A12,A13,A14,A15,A19,A16,A17]]>
+    </statColumn>
+  </VerifyShowHead>
+  <FundLookHead>
+    <column>
+      <![CDATA[C7,A27,A11,A12,A13,A14,A15,A16,A17,A18,A20,A21,A22,A23,A24,A25,A26,A19]]>
+    </column>
+    <head>
+      <![CDATA[
+        <tr>
+          <td rowspan="3" bgcolor="#CEE7FF">年月</td>
+          <td rowspan="3" bgcolor="#CEE7FF">期<br/>初<br/>缴<br/>存<br/>余<br/>额</td>
+          <td colspan="5" bgcolor="#CEE7FF">当月汇缴</td>
+          <td rowspan="3" bgcolor="#CEE7FF">调<br/>入<br/>金<br/>额</td>
+          <td rowspan="3" bgcolor="#CEE7FF">调<br/>出<br/>金<br/>额</td>
+          <td rowspan="3" bgcolor="#CEE7FF">当<br/>年<br/>结<br/>息</td>          
+          <td colspan="7" bgcolor="#CEE7FF">提取</td>
+          <td rowspan="3" bgcolor="#CEE7FF">期<br/>末<br/>缴<br/>存<br/>余<br/>额</td>
+        </tr>
+        <tr>
+          <td rowspan="2" bgcolor="#CEE7FF">个人</td>
+          <td rowspan="2" bgcolor="#CEE7FF">企业</td>
+          <td colspan="2" bgcolor="#CEE7FF">补缴</td>
+          <td rowspan="2" bgcolor="#CEE7FF">外<br/>部<br/>转</br>入</td>
+          <td rowspan="2" bgcolor="#CEE7FF">购<br/>房</td>
+          <td rowspan="2" bgcolor="#CEE7FF">退<br/>休</td>
+          <td rowspan="2" bgcolor="#CEE7FF">调<br/>出<br/>集<br/>团</td>
+          <td rowspan="2" bgcolor="#CEE7FF">解<br/>聘</td>
+          <td rowspan="2" bgcolor="#CEE7FF">死<br/>亡</td>
+          <td rowspan="2" bgcolor="#CEE7FF">其<br/>它</td>
+          <td rowspan="2" bgcolor="#CEE7FF">合<br/>计</td>
+        </tr>
+        <tr>
+          <td bgcolor="#CEE7FF">个<br/>人</td>
+          <td bgcolor="#CEE7FF">企<br/>业</td>
+        </tr>
+      ]]>
+    </head>
+  </FundLookHead>
+  <TakeShowHead>
+    <![CDATA[
+     <tr>
+        <td colspan="7" bgcolor="#CEE7FF">提取</td>
+     </tr>
+     <tr>
+        <td bgcolor="#CEE7FF">购房</td>
+        <td bgcolor="#CEE7FF">退休</td>
+        <td bgcolor="#CEE7FF">调出集团</td>
+        <td bgcolor="#CEE7FF">解聘</td>
+        <td bgcolor="#CEE7FF">死亡</td>
+        <td bgcolor="#CEE7FF">其它</td>
+        <td bgcolor="#CEE7FF">合计</td>
+     </tr>
+    ]]>
+  </TakeShowHead>
+  <EmpFundLook>
+    <column>
+      <![CDATA[C8 as 身份证号,A11 as 姓名,A13 as 状态,A14 as 职工帐号,A18 as 所属部门,A17 as 单位名称]]>
+    </column>
+    <lookFiled>
+      <![CDATA[A11,C8,C6,A17]]>
+    </lookFiled>
+  </EmpFundLook>
+</config>

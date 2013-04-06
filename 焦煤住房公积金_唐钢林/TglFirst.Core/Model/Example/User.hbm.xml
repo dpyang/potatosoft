@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true" 
+                   namespace="TglFirst.Core.Model.Example" 
+                   assembly="TglFirst.Core">
+
+  <class name="User" abstract="true">
+    <id name="Uid" column="C1" type="guid">
+      <generator class="guid.comb"/>
+    </id>
+    <property name="LoginName" column="A11" />
+    <property name="LoginPwk" column="A12" />
+    <property name="ShowName" column="A13" />
+  </class>
+
+</hibernate-mapping>

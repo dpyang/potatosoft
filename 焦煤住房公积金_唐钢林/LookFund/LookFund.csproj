@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C20A0EB1-A194-4776-B79C-EF88D67AA414}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LookFund</RootNamespace>
+    <AssemblyName>LookFund</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\Lib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\Lib\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HPSF">
+      <HintPath>..\Lib\NPOI.HPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HSSF">
+      <HintPath>..\Lib\NPOI.HSSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.POIFS">
+      <HintPath>..\Lib\NPOI.POIFS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Util">
+      <HintPath>..\Lib\NPOI.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate21, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Spring.Data.NHibernate21.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AbstractPageController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Filter\AuthorizationAttribute.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ValidCode\ValidateCode.cs" />
+    <Compile Include="Dao\DES.cs" />
+    <Compile Include="Dao\FundInfo\DBasicInfo.cs" />
+    <Compile Include="Dao\FundInfo\DCurrentMonth.cs" />
+    <Compile Include="Dao\FundInfo\DHistoryMonth.cs" />
+    <Compile Include="Dao\FundInfo\ImportExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dao\Membership\DComments.cs" />
+    <Compile Include="Dao\FundInfo\ReadXML.cs" />
+    <Compile Include="Dao\Membership\DEmploye.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dao\Membership\DFunctionMenu.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExeclHelper.cs" />
+    <Compile Include="Models\FundInfo\BasicInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\CurrentMonth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\HistoryMonth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\Reserve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\TakeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\Transfer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\TransferJoin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\FundInfo\TransferOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Membership\FunctionMenu.cs" />
+    <Compile Include="Models\Membership\MComments.cs" />
+    <Compile Include="Models\Membership\MEmploye.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ViewModel\CommentsManageViewModel.cs" />
+    <Compile Include="Models\ViewModel\CommentsViewModel.cs" />
+    <Compile Include="Models\ViewModel\EmpLookViewModel.cs" />
+    <Compile Include="Models\ViewModel\ErrorViewModel.cs" />
+    <Compile Include="Models\ViewModel\FundLookTimeViewModel.cs" />
+    <Compile Include="Models\ViewModel\LoginViewModel.cs" />
+    <Compile Include="Models\ViewModel\OperatorEditViewModel.cs" />
+    <Compile Include="Models\ViewModel\PwdEditViewModel.cs" />
+    <Compile Include="Models\ViewModel\ReportStatViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CsvStreamWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Application-Context.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\Dao-Context.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="App_Data\JMZfgjjBsQuery.mdf" />
+    <Content Include="App_Data\JMZfgjjBsQuery_log.ldf">
+      <DependentUpon>JMZfgjjBsQuery.mdf</DependentUpon>
+    </Content>
+    <Content Include="Config\Import.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\UiStyle\images\apply.jpg" />
+    <Content Include="Content\UiStyle\images\apply1.jpg" />
+    <Content Include="Content\UiStyle\images\apply2.jpg" />
+    <Content Include="Content\UiStyle\images\apply3.jpg" />
+    <Content Include="Content\UiStyle\images\bg.jpg" />
+    <Content Include="Content\UiStyle\images\biaoge.gif" />
+    <Content Include="Content\UiStyle\images\btn.jpg" />
+    <Content Include="Content\UiStyle\images\dot.jpg" />
+    <Content Include="Content\UiStyle\images\flash.jpg" />
+    <Content Include="Content\UiStyle\images\foot.gif" />
+    <Content Include="Content\UiStyle\images\guanggao.gif" />
+    <Content Include="Content\UiStyle\images\guanggao_03.gif" />
+    <Content Include="Content\UiStyle\images\guanggao_06.gif" />
+    <Content Include="Content\UiStyle\images\guanggao_08.gif" />
+    <Content Include="Content\UiStyle\images\guanggao_10.gif" />
+    <Content Include="Content\UiStyle\images\guanggao_12.gif" />
+    <Content Include="Content\UiStyle\images\inlanmu.gif" />
+    <Content Include="Content\UiStyle\images\inlanmu1.gif" />
+    <Content Include="Content\UiStyle\images\inpbg.gif" />
+    <Content Include="Content\UiStyle\images\inright2.gif" />
+    <Content Include="Content\UiStyle\images\inright3.gif" />
+    <Content Include="Content\UiStyle\images\inright4.gif" />
+    <Content Include="Content\UiStyle\images\lanmu1.gif" />
+    <Content Include="Content\UiStyle\images\lanmu2.gif" />
+    <Content Include="Content\UiStyle\images\lanmu3.gif" />
+    <Content Include="Content\UiStyle\images\lanmu4.gif" />
+    <Content Include="Content\UiStyle\images\lanmu5.gif" />
+    <Content Include="Content\UiStyle\images\login.jpg" />
+    <Content Include="Content\UiStyle\images\login1.gif" />
+    <Content Include="Content\UiStyle\images\login1.jpg" />
+    <Content Include="Content\UiStyle\images\login2.gif" />
+    <Content Include="Content\UiStyle\images\login2.jpg" />
+    <Content Include="Content\UiStyle\images\login3.gif" />
+    <Content Include="Content\UiStyle\images\login3.jpg" />
+    <Content Include="Content\UiStyle\images\loginbg1.jpg" />
+    <Content Include="Content\UiStyle\images\logo.gif" />
+    <Content Include="Content\UiStyle\images\nav.gif" />
+    <Content Include="Content\UiStyle\images\photo.gif" />
+    <Content Include="Content\UiStyle\images\right1.gif" />
+    <Content Include="Content\UiStyle\images\text1.gif" />
+    <Content Include="Content\UiStyle\images\text2.gif" />
+    <Content Include="Content\UiStyle\images\top.jpg" />
+    <Content Include="Content\UiStyle\images\top1.jpg" />
+    <Content Include="Content\UiStyle\images\zhanshi.gif" />
+    <Content Include="Content\UiStyle\images\zheche2.gif" />
+    <Content Include="Content\UiStyle\images\zhuche3.jpg" />
+    <Content Include="Content\UiStyle\images\zuo1.jpg" />
+    <Content Include="Content\UiStyle\images\zuo2.jpg" />
+    <Content Include="Content\UiStyle\index.css" />
+    <EmbeddedResource Include="Dao\FundInfo\DCurrentMonthSql.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dao\FundInfo\DBasicInfoSql.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Global.asax" />
+    <EmbeddedResource Include="Models\FundInfo\BasicInfo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\FundInfo\CurrentMonth.hbm.xml" />
+    <EmbeddedResource Include="Models\FundInfo\HistoryMonth.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\FundInfo\Reserve.hbm.xml" />
+    <EmbeddedResource Include="Models\FundInfo\Transfer.hbm.xml" />
+    <EmbeddedResource Include="Models\FundInfo\TransferJoin.hbm.xml" />
+    <EmbeddedResource Include="Models\FundInfo\TransferOut.hbm.xml" />
+    <EmbeddedResource Include="Models\Membership\MComments.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\FundInfo\TakeInfo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\sql.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Membership\FunctionMenu.hbm.xml" />
+    <Content Include="Scripts\Account\CenterImport.js" />
+    <Content Include="Scripts\Account\CommentsManage.js" />
+    <Content Include="Scripts\Account\EmpComments.js" />
+    <Content Include="Scripts\Account\EmpFundLook.js" />
+    <Content Include="Scripts\Account\OperatorManage.js" />
+    <Content Include="Scripts\Account\PwdEdit.js" />
+    <Content Include="Scripts\Account\ReportImport.js" />
+    <Content Include="Scripts\Account\VerifyFund.js" />
+    <Content Include="Scripts\ExtSystem\adapter\ext\ext-base-debug.js" />
+    <Content Include="Scripts\ExtSystem\adapter\ext\ext-base.js" />
+    <Content Include="Scripts\ExtSystem\adapter\jquery\ext-jquery-adapter-debug.js" />
+    <Content Include="Scripts\ExtSystem\adapter\jquery\ext-jquery-adapter.js" />
+    <Content Include="Scripts\ExtSystem\adapter\prototype\ext-prototype-adapter-debug.js" />
+    <Content Include="Scripts\ExtSystem\adapter\prototype\ext-prototype-adapter.js" />
+    <Content Include="Scripts\ExtSystem\adapter\yui\ext-yui-adapter-debug.js" />
+    <Content Include="Scripts\ExtSystem\adapter\yui\ext-yui-adapter.js" />
+    <Content Include="Scripts\ExtSystem\ext-all-debug.js" />
+    <Content Include="Scripts\ExtSystem\ext-all.js" />
+    <Content Include="Scripts\ExtSystem\ext-lang-zh_CN.js" />
+    <Content Include="Scripts\ExtSystem\resources\charts.swf" />
+    <Content Include="Scripts\ExtSystem\resources\css\debug.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\ext-all-notheme.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\ext-all.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\README.txt" />
+    <Content Include="Scripts\ExtSystem\resources\css\reset-min.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\borders.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\box.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\button.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\combo.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\core.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\date-picker.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\dd.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\debug.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\dialog.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\editor.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\form.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\grid.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\layout.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\list-view.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\menu.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\panel-reset.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\panel.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\progress.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\qtips.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\reset.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\resizable.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\slider.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\tabs.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\toolbar.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\tree.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\structure\window.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\borders.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\box.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\button.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\combo.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\core.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\date-picker.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\dd.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\debug.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\dialog.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\editor.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\form.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\grid.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\layout.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\list-view.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\menu.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\panel.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\progress.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\qtips.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\resizable.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\slider.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\tabs.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\toolbar.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\tree.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\visual\window.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\xtheme-blue.css" />
+    <Content Include="Scripts\ExtSystem\resources\css\xtheme-gray.css" />
+    <Content Include="Scripts\ExtSystem\resources\expressinstall.swf" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\corners-blue.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\corners.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\l-blue.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\l.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\r-blue.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\r.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\tb-blue.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\box\tb.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\arrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\btn.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\group-cs.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\group-lr.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\group-tb.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\s-arrow-b-noline.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\s-arrow-b.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\s-arrow-bo.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\s-arrow-noline.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\s-arrow-o.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\button\s-arrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\dd\drop-add.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\dd\drop-no.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\dd\drop-yes.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\editor\tb-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\checkbox.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\clear-trigger.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\date-trigger.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\error-tip-corners.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\exclamation.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\radio.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\search-trigger.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\text-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\trigger-tpl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\form\trigger.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\gradient-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\arrow-left-white.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\arrow-right-white.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\col-move-bottom.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\col-move-top.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\columns.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\dirty.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\done.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\drop-no.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\drop-yes.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\footer-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid-blue-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid-blue-split.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid-hrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid-loading.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid-split.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid-vista-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid3-hrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\group-by.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\group-collapse.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\group-expand-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\group-expand.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hd-pop.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hmenu-asc.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hmenu-desc.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hmenu-lock.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hmenu-lock.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hmenu-unlock.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\hmenu-unlock.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\invalid_line.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\loading.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\mso-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\nowait.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-first-disabled.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-first.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-last-disabled.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-last.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-next-disabled.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-next.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-prev-disabled.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\page-prev.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\pick-button.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\refresh.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\row-check-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\row-expand-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\row-over.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\row-sel.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\sort-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\sort_asc.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\sort_desc.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\grid\wait.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\collapse.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\expand.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\gradient-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\mini-bottom.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\mini-left.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\mini-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\mini-top.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\ns-collapse.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\ns-expand.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\panel-close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\panel-title-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\stick.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\stuck.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\tab-close-on.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\layout\tab-close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\menu\checked.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\menu\group-checked.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\menu\item-over.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\menu\menu-parent.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\menu\menu.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\menu\unchecked.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\corners-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\left-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\light-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\tool-sprites.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\top-bottom.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\top-bottom.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\white-corners-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\white-left-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\panel\white-top-bottom.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\progress\progress-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\qtip\bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\qtip\close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\qtip\tip-anchor-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\qtip\tip-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\s.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shadow-c.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shadow-lr.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shadow.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\blue-loading.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\calendar.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\glass-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\hd-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\large-loading.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\left-btn.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\loading-balls.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\right-btn.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\shared\warning.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\e-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\e-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\ne-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\nw-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\s-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\s-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\se-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\se-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\square.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\sizer\sw-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\slider\slider-bg.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\slider\slider-thumb.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\slider\slider-v-bg.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\slider\slider-v-thumb.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\scroll-left.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\scroll-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\scroller-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-btm-over-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-btm-over-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-strip-bg.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tabs\tabs-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\btn-arrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\gray-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\more.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\tb-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\toolbar\tb-xl-sep.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\arrows.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\drop-add.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\drop-between.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\drop-no.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\drop-over.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\drop-under.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\drop-yes.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-end-minus.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-end-plus.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-end.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-line.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-minus.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow-plus.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\elbow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\folder-open.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\folder.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\leaf.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\loading.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\tree\s.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\icon-error.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\icon-info.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\icon-question.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\icon-warning.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\left-corners.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\left-right.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\right-corners.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\default\window\top-bottom.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\button\btn-arrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\button\btn-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\button\btn.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\button\group-cs.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\button\group-lr.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\button\group-tb.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\gradient-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\corners-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\left-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\light-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\tool-sprite-tpl.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\tool-sprites.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\tools-sprites-trans.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\top-bottom.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\top-bottom.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\white-corners-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\white-left-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\panel\white-top-bottom.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\qtip\bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\qtip\close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\qtip\tip-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\s.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\scroll-left.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\scroll-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\scroller-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-strip-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-strip-bg.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\tabs\tabs-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\btn-arrow-light.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\btn-arrow.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\btn-over-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\gray-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\more.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\tb-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\icon-error.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\icon-info.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\icon-question.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\icon-warning.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\left-corners.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\left-right.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\right-corners.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\gray\window\top-bottom.png" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\bg-center.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\bg-left.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\bg-right.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\collapse.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\dlg-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\e-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\expand.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\hd-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\s-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\se-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\w-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\gradient-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\grid\grid-split.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\grid\grid-vista-hd.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\collapse.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\expand.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\gradient-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\ns-collapse.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\ns-expand.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\panel-close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\panel-title-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\panel-title-light-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\stick.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\tab-close-on.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\layout\tab-close.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\qtip\bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\qtip\tip-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\s.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\e-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\e-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\ne-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\ne-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\nw-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\nw-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\s-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\s-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\se-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\se-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\sw-handle-dark.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\sizer\sw-handle.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\tabs\tab-sprite.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\toolbar\gray-bg.gif" />
+    <Content Include="Scripts\ExtSystem\resources\images\vista\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Scripts\Home\Login.js" />
+    <Content Include="Scripts\jquery-1.4.2.js" />
+    <Content Include="Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.4.custom.min.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Views\Account\AdminMain.aspx" />
+    <Content Include="Views\Account\BaseImport.ascx" />
+    <Content Include="Views\Account\CenterImport.ascx" />
+    <Content Include="Views\Account\CenterLook.ascx" />
+    <Content Include="Views\Account\CenterLookShow.ascx" />
+    <Content Include="Views\Account\CommentsManage.ascx" />
+    <Content Include="Views\Account\CommentsResult.ascx" />
+    <Content Include="Views\Account\CommentsStat.ascx" />
+    <Content Include="Views\Account\EmpCenterLookShow.ascx" />
+    <Content Include="Views\Account\EmpComments.ascx" />
+    <Content Include="Views\Account\EmpFundLook.ascx" />
+    <Content Include="Views\Account\ExportError.ascx" />
+    <Content Include="Views\Account\FundInfoData.ascx" />
+    <Content Include="Views\Account\FundLookTime.ascx" />
+    <Content Include="Views\Account\HistoryData.ascx" />
+    <Content Include="Views\Account\HistoryDataEmp.ascx" />
+    <Content Include="Views\Account\HistoryDateImport.ascx" />
+    <Content Include="Views\Account\LeftMenu.ascx" />
+    <Content Include="Views\Account\LookResultShow.ascx" />
+    <Content Include="Views\Account\OperatorAdd.ascx" />
+    <Content Include="Views\Account\OperatorFun.ascx" />
+    <Content Include="Views\Account\OperatorManage.ascx" />
+    <Content Include="Views\Account\OperatorUpdate.ascx" />
+    <Content Include="Views\Account\PwdEdit.ascx" />
+    <Content Include="Views\Account\PwdInit.ascx" />
+    <Content Include="Views\Account\ReplyEdit.ascx" />
+    <Content Include="Views\Account\ReportState.ascx" />
+    <Content Include="Views\Account\ReportStateResult.ascx" />
+    <Content Include="Views\Account\SelectListUnit.ascx" />
+    <Content Include="Views\Account\VerifyFund.ascx" />
+    <Content Include="Views\Account\CheckLoginHead.ascx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\Login.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Models\Membership\MEmploye.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TglFirst.Core\TglFirst.Core.csproj">
+      <Project>{DA44C91C-2EF6-4693-91A1-6CECF80AE7AA}</Project>
+      <Name>TglFirst.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\gjjst.cd" />
+    <Content Include="Views\Shared\Main.Master" />
+    <Content Include="Views\Shared\NavMenu.Master" />
+    <Content Include="Views\Shared\NavSite.Master" />
+    <None Include="Scripts\ExtSystem\resources\css\structure\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\css\visual\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\css\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\box\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\button\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\dd\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\editor\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\form\clear-trigger.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\form\date-trigger.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\form\search-trigger.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\form\trigger.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\form\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\grid\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\layout\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\menu\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\panel\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\progress\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\qtip\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\shared\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\sizer\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\slider\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\tabs\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\toolbar\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\tree\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\default\window\left-corners.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\window\left-right.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\window\right-corners.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\window\top-bottom.psd" />
+    <None Include="Scripts\ExtSystem\resources\images\default\window\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\button\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\panel\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\qtip\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\tabs\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\toolbar\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\window\left-corners.pspimage" />
+    <None Include="Scripts\ExtSystem\resources\images\gray\window\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\basic-dialog\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\grid\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\layout\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\qtip\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\sizer\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\tabs\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\toolbar\vssver2.scc" />
+    <None Include="Scripts\ExtSystem\resources\images\vista\vssver2.scc" />
+    <Content Include="Views\Shared\HomeNavMenu.Master" />
+    <None Include="Uploads\texterror.xls" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5707</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/LookFund</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

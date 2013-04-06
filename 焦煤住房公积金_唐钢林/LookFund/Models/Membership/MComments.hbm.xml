@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   default-lazy="true"
+                   namespace="LookFund.Models.Membership"
+                   assembly="LookFund">
+
+  <union-subclass name="MComments" extends="TglFirst.Core.Model.AbstractModel,TglFirst.Core" table="R_2001_10_1004">
+    <property name="Conent" column="A11"/>
+    <property name="Reply" column="A12" />
+    <property name="CommDate" column="A13" />
+    <many-to-one name="ComPerson" class="MEmploye" column="C6"/>
+  </union-subclass>
+
+</hibernate-mapping>
